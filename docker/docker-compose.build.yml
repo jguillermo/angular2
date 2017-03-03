@@ -1,0 +1,8 @@
+version: '2'
+services:
+
+  node:
+    image: jguillermo/angular2
+    build:
+      context: ./build/node/
+    command: gulp prod
