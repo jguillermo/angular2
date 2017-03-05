@@ -1,8 +1,11 @@
 version: '2'
 services:
 
-  node:
-    image: jguillermo/angular2
+  base:
+    image: jguillermo/angular2:base
     build:
-      context: ./build/node/
-    command: gulp prod
+      context: ./build/base/
+  server:
+    image: jguillermo/angular2:server
+    build:
+      context: ./build/server/

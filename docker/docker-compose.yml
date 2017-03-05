@@ -1,13 +1,10 @@
 version: '2'
 services:
 
-  node:
-    image: jguillermo/angular2
-    environment:
-      - DEV_UID=${UID}
-      - DEV_GID=${GID}
+  server:
+    image: jguillermo/angular2:server
     volumes:
-      - ./../:/app
+      - ./../app:/usr/src/app/public
     command: npm start
     ports:
-      - 3000:3000
+      - 8084:8080
