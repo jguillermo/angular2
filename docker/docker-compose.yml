@@ -5,6 +5,7 @@ services:
     image: jguillermo/angular2:server
     volumes:
       - ./../app:/usr/src/app/public
+      - ./../routers:/usr/src/app/routers
     command: npm start
     ports:
       - 8084:8080

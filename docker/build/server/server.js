@@ -1,15 +1,28 @@
 'use strict';
 
-const express = require('express');
+var express = require('express');
 
 // Constants
-const PORT = 8080;
+var PORT = 8080;
 
 // App
-const app = express();
-app.get('/', function (req, res) {
-    res.send('Hello world\n');
+var app = express();
+
+var routePath="./routers/";
+
+var fs=require("fs");
+
+var path = require('path');
+
+fs.readdirSync(routePath).forEach(function(file) {
+    var route=routePath+file;
+    require(route)(app,path);
 });
 
+// app.get('/', function (req, res) {
+//     //res.sendFile('./app/hola.html');
+//     res.sendFile('public/hola.html', { root: __dirname });
+// });
+
 app.listen(PORT);
-console.log('Running on http://localhost:' + PORT);
+console.log('Running on http://localhost:8084');
