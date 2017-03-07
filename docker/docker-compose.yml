@@ -4,7 +4,7 @@ services:
   server:
     image: jguillermo/angular2:server
     volumes:
-      - ./../app:/usr/src/app/public
+      - ./../app:/usr/src/app/app
       - ./../routers:/usr/src/app/routers
     command: npm start
     ports:

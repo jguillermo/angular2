@@ -14,6 +14,9 @@ var fs=require("fs");
 
 var path = require('path');
 
+app.use(express.static('app'));
+
+
 fs.readdirSync(routePath).forEach(function(file) {
     var route=routePath+file;
     require(route)(app,path);
