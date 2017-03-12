@@ -1,18 +1,3 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 npm-debug.log
-.editorconfig
-.gitignore
-.travis.yml
-README.md
-bs-config.e2e.json
-bs-config.json
-e2e/
-karma-test-shim.js
-karma.conf.js
-non-essential-files.osx.txt
-non-essential-files.txt
-package.json
-protractor.config.js
-src/
-tslint.json
