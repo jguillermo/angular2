@@ -9,3 +9,4 @@ services:
     command: npm start
     ports:
       - 8084:8080
+      - 4200:4200

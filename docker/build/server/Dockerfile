@@ -11,3 +11,5 @@ COPY server.js $SRC_DIR
 RUN mkdir -p $SRC_PUBLIC && \
     mkdir -p $SRC_ROUTER && \
     npm install
+
+EXPOSE 4200
