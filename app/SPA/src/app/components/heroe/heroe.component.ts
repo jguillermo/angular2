@@ -18,7 +18,7 @@ export class HeroeComponent {
 
       this.heroe = this._heroeService.getHeroe(params['id']);
 
-      console.log(params['id'],this.heroe);
+
     });
 
   }
